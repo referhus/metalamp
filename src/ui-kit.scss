@@ -1,12 +1,6 @@
 @import "colors";
 @import "mixins";
 
-$color_h1: tomato;
-
-h1 {
-    color: $color_h1;
-}
-
 body {
   @include body;
 }
@@ -51,7 +45,7 @@ body {
   cursor: pointer;
 }
 
-.arrival-departure:nth-last-child(-n+3){
+.arrival-departure:nth-last-child(-n+2){
   flex-basis: 100%;
 }
 

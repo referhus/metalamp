@@ -1,0 +1,30 @@
+doctype html 
+html
+ body
+  .cards
+   .card-date
+    h1.title-date Найдём номера под ваши пожелания
+    .arrival-departure
+     h3.text Прибытие
+     .input-date
+      input(type="text", placeholder="ДД.ММ.ГГГГ").dropdown#datepicker 
+      span.material-icons.arrow-down expand_more
+
+    .arrival-departure
+     h3.text Выезд
+     .input-date
+      input(type="text", placeholder="ДД.ММ.ГГГГ").dropdown#datepicker 
+      span.material-icons.arrow-down expand_more
+     
+    .arrival-departure
+     h3.text Гости
+     .input-ghost
+      input.dropdown.ghost#datepicker(type="text", placeholder="Сколько гостей")
+      span.material-icons.arrow-down expand_more
+     
+    .arrival-departure
+     a.btn(href="#") 
+      p Подобрать номер
+      span.material-icons arrow_forward
+
+
