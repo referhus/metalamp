@@ -6,13 +6,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="ui-kit.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="src/ui-kit.css">
 	<title>Ui-kit</title>
 </head>
 <body>
 
 	<div class="cards">
-		<div class="card-date">
+<!-- 		<div class="card-date">
 			<h1 class="title-date">
 				Найдём номера под ваши пожелания
 			</h1>
@@ -23,7 +24,7 @@
 				<div class="input-date">				
 					<input type="text" placeholder="ДД.ММ.ГГГГ" id="datepicker" class="dropdown">
 				</input>
-				<div class="arrow"></div>
+<span class="material-icons arrow-down">expand_more</span>
 				</div>
 			</div>
 			<div class="arrival-departure">
@@ -33,7 +34,7 @@
 				<div class="input-date">				
 					<input type="text" placeholder="ДД.ММ.ГГГГ" id="datepicker" class="dropdown">
 				</input>
-				<div class="arrow"></div>
+<span class="material-icons arrow-down">expand_more</span>
 				</div>
 			</div>
 			<div class="arrival-departure">
@@ -43,16 +44,62 @@
 				<div class="input-ghost">				
 					<input type="text" placeholder="Сколько гостей" id="datepicker" class="dropdown ghost">
 				</input>
-				<div class="arrow"></div>
+<span class="material-icons arrow-down">expand_more</span>
 				</div>
 			</div>
 			<div class="arrival-departure">
-				<a class="btn" href="#">Подобрать номер</a>
+				<a class="btn" href="#"> <p>Подобрать номер</p> <span class="material-icons">arrow_forward</span></a>
+			</div>
+				</div> -->
+
+		<div class="card-date">
+			<h1 class="title-date title-price">
+				<div class="number"><small>№</small> 888 <span>люкс</span></div>
+				<div class="price">9 990₽ в сутки</div>
+ </h1>
+			<div class="arrival-departure">
+				<h3 class="text">
+					Прибытие
+				</h3>
+				<div class="input-date">				
+					<input type="text" placeholder="19.08.2019" id="datepicker" class="dropdown">
+				</input>
+<span class="material-icons arrow-down">expand_more</span>
+				</div>
+			</div>
+			<div class="arrival-departure">
+				<h3 class="text">
+					Выезд
+				</h3>
+				<div class="input-date">				
+					<input type="text" placeholder="23.08.2019" id="datepicker" class="dropdown">
+				</input>
+<span class="material-icons arrow-down">expand_more</span>
+				</div>
+			</div>
+			<div class="arrival-departure">
+				<h3 class="text">
+					Гости
+				</h3>
+				<div class="input-ghost">				
+					<input type="text" placeholder="3 гостя" id="datepicker" class="dropdown ghost">
+				</input>
+<span class="material-icons arrow-down">expand_more</span>
+				</div>
+			</div>
+			<div class="arrival-departure sum">
+				<div class="info">9 990₽ х 4 суток</div><div class="money">39 960₽</div>
+				<div class="info">Сбор за услуги: скидка 2 179₽</div> <div class="money">0₽</div>
+				<div class="info">Сбор за дополнительные услуги</div> <div class="money">300₽</div>
+				<h2 class="info">Итого:</h2> <h2 class="money">38 081₽</h2>
+			</div>
+			<div class="arrival-departure">
+				<a class="btn" href="#"> <p>Забронировать</p> <span class="material-icons">arrow_forward</span></a>
 			</div>
 				</div>
+
+
+
 			</div>  
-			</div>
-		</div>
-	</div>
 </body>
 </html>
