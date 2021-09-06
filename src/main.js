@@ -1,2 +1,2 @@
-import './main.scss';
-console.log('Hello main.js!')
+import '/ui-kit.scss';
+console.log('Hello main.js!');
