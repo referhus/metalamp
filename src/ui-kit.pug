@@ -1,6 +1,7 @@
 doctype html 
 html
  body
+ //-
   .cards
    .card-date
     h1.title-date Найдём номера под ваши пожелания
@@ -25,6 +26,147 @@ html
     .arrival-departure
      a.btn(href="#") 
       p Подобрать номер
-      span.material-icons arrow_forward
+-//
+
+
+.form-elements
+ .input-general
+  .input-text
+   h3.text text field
+   h3.text default
+  .form-input
+   input(type="email", 
+   placeholder="Email").default-input
+
+ .input-general
+  .input-text
+   h3.text text field
+   h3.text hover / focus
+  .form-input
+   input(type="text", 
+   placeholder="This is pretty awesome").hover-input
+
+ .input-general
+  .input-text
+   h3.text dropdown
+  .form-input
+   button.dropdown 
+    span Сколько гостей 
+    span.material-icons.arrow-down expand_more
+
+ .input-general
+  .input-text
+   h3.text masked text field
+  .form-input
+   input(type="text", 
+   placeholder="ДД.ММ.ГГГГ").default-input
+
+
+ .input-date
+  .input-text 
+   h3.text date dropdown
+  .form-input
+    button.dropdown
+     span ДД.ММ.ГГГГ
+     span.material-icons.arrow-down expand_more
+
+ .input-date
+  .input-text 
+   h3.text date dropdown
+  .form-input
+    button.dropdown
+     span 19.08.2019
+     span.material-icons.arrow-down expand_more
+
+
+ .input-medium
+  .input-text 
+   h3.text filter date dropdown
+  .form-input
+    button.dropdown
+     span 19 авг - 23 авг
+     span.material-icons.arrow-down expand_more
+
+ .input-medium
+  .input-text 
+   h3.text subscription text field
+  .form-input.subscription-form
+   input(type="text", 
+   placeholder="Email").default-input.subscription
+   span.material-icons.arrow-forward arrow_forward
+
+ .input-medium
+  .input-text 
+   h3.text dropdown
+   h3.text default
+  .form-input
+    button.dropdown
+     span 2 спальни, 2 кровати...
+     span.material-icons.arrow-down expand_more
+
+ .input-medium
+  .input-text 
+   h3.text dropdown
+   h3.text expanded
+  .form-input.expanded-dropdown
+    button.dropdown
+     span 2 спальни, 2 кровати...
+     span.material-icons.arrow-down expand_more
+  .form-input.expanded-form
+   .numbers-items
+    h3.text-items спальни
+     span 2
+    h3.text-items кровати
+     span 2
+    h3.text-items ванные комнаты
+     span 0
+
+ .input-medium
+  .form-checkboxlist
+    button.dropdown.checkboxlist
+     h3.text expandable checkbox list
+     span.material-icons.arrow-down expand_more
+
+ .input-medium
+  .form-checkboxlist
+    button.dropdown.checkboxlist
+     h3.text expandable checkbox list
+     span.material-icons.arrow-down expand_less
+  .input-checkbox
+   input(type="checkbox", 
+   class="checkbox-services",
+   name="services",
+   id="breakfast")
+   label(for="breakfast") Завтрак
+  .input-checkbox
+   input(type="checkbox", 
+   class="checkbox-services",
+   name="services",
+   id="table")
+   label(for="table") Письменный стол
+  .input-checkbox
+   input(type="checkbox", 
+   class="checkbox-services",
+   name="services",
+   id="feeding-chair")
+   label(for="feeding-chair") Стул для кормления
+  .input-checkbox
+   input(type="checkbox", 
+   class="checkbox-services",
+   name="services",
+   id="crib")
+   label(for="crib") Кроватка
+  .input-checkbox
+   input(type="checkbox", 
+   class="checkbox-services",
+   name="services",
+   id="tv")
+   label(for="tv") Телевизор
+  .input-checkbox
+   input(type="checkbox", 
+   class="checkbox-services",
+   name="services",
+   id="shampoo")
+   label(for="shampoo") Шампунь
 
 

@@ -1,9 +1,281 @@
+.input-general {
+  max-width: 320px;
+}
+
+.form-input {
+  font-family: Montserrat, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #1F2041;
+  max-width: 100%;
+  cursor: pointer;
+  border: 1px solid #1F204140;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+@font-face {
+  .form-input {
+    font-family: "Material Icons";
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot);
+    /* For IE6-8 */
+    src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"), url(https://example.com/MaterialIcons-Regular.woff) format("woff"), url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
+  }
+}
+
+.input-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+  text-transform: uppercase;
+}
+
+.text:nth-child(2) {
+  opacity: 0.5;
+  font-weight: normal;
+}
+
+input {
+  border: none;
+  padding: 13px 0 13px 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  font-family: Montserrat, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #1F2041;
+}
+@font-face {
+  input::placeholder {
+    font-family: "Material Icons";
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot);
+    /* For IE6-8 */
+    src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"), url(https://example.com/MaterialIcons-Regular.woff) format("woff"), url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
+  }
+}
+
+.default-input {
+  opacity: 0.25;
+}
+
+.hover-input {
+  opacity: 0.75;
+  border: 1px solid #1F204180;
+}
+
+.dropdown {
+  font-family: Montserrat, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #1F2041;
+  padding: 13px 0 13px 15px;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  color: #1F2041BF;
+}
+@font-face {
+  .dropdown {
+    font-family: "Material Icons";
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot);
+    /* For IE6-8 */
+    src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"), url(https://example.com/MaterialIcons-Regular.woff) format("woff"), url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
+  }
+}
+
+.arrow-down {
+  color: #1F204180;
+  padding: 0 15px;
+}
+
+.input-date {
+  max-width: 150px;
+}
+
+.input-medium {
+  width: 266px;
+}
+
+.subscription {
+  max-width: 70%;
+}
+
+.subscription-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow-forward {
+  color: #1F204180;
+  padding: 0 15px;
+}
+
+.expanded-dropdown {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.expanded-form {
+  border-top: 0;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  margin-top: -1px;
+}
+
+.text-items {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+  text-transform: uppercase;
+  padding: 13px 15px 7px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text-items span {
+  padding: 0px;
+}
+.text-items span:before {
+  content: "-";
+  color: #1F204140;
+  display: inline-block;
+  font-size: 18px;
+  text-align: center;
+  padding: 7px 0;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 1px solid #1F204140;
+  margin-right: 15px;
+}
+.text-items span:after {
+  content: "+";
+  color: #1F204140;
+  display: inline-block;
+  font-size: 18px;
+  text-align: center;
+  padding: 7px 0;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 1px solid #1F204140;
+  margin-left: 10px;
+}
+
+.form-checkboxlist .text {
+  margin: 0;
+}
+.form-checkboxlist .checkboxlist {
+  padding: 13px 0px;
+  align-items: center;
+}
+
+.input-checkbox input {
+  width: 5%;
+}
+
+input[type=checkbox]:checked,
+input[type=checkbox]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+input[type=checkbox]:checked + label,
+input[type=checkbox]:not(:checked) + label {
+  display: inline-block;
+  position: relative;
+  padding-left: 28px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+input[type=checkbox]:checked + label:before,
+input[type=checkbox]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #BC9CFF;
+  border-radius: 4px;
+  margin-right: 15px;
+}
+
+input[type=checkbox]:checked + label:after,
+input[type=checkbox]:not(:checked) + label:after {
+  content: "";
+  position: absolute;
+  transition: all 0.2s ease;
+  left: 5px;
+  top: 5px;
+  width: 8px;
+  height: 6px;
+  border-radius: 1px;
+  border-left: 3px solid #BC9CFF;
+  border-bottom: 3px solid #BC9CFF;
+  transform: rotate(-45deg);
+}
+
+input[type=checkbox]:not(:checked) + label:after {
+  opacity: 0;
+}
+
+input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+
+label {
+  font-family: Montserrat, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #1F2041;
+  opacity: 0.5;
+}
+@font-face {
+  label {
+    font-family: "Material Icons";
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot);
+    /* For IE6-8 */
+    src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"), url(https://example.com/MaterialIcons-Regular.woff) format("woff"), url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
+  }
+}
+
 body {
   font-family: Montserrat, sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
+  color: #1F2041;
 }
 @font-face {
   body {
@@ -16,6 +288,7 @@ body {
   }
 }
 
+/* 
 .card-date {
   display: flex;
   justify-content: space-between;
@@ -29,21 +302,10 @@ body {
 }
 
 .title-date {
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 29px;
-  color: #1F2041;
-  flex-basis: 100%;
+ @include h1;
+ flex-basis: 100%;
 }
 
-.text {
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #1F2041;
-  text-transform: uppercase;
-}
 
 .input-date {
   border: 1px solid #1F204140;
@@ -56,26 +318,12 @@ body {
 }
 
 .dropdown {
-  font-family: Montserrat, sans-serif;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
+   @include body;
   border: none;
   max-width: 70%;
   cursor: pointer;
 }
-@font-face {
-  .dropdown {
-    font-family: "Material Icons";
-    font-style: normal;
-    font-weight: 400;
-    src: url(https://example.com/MaterialIcons-Regular.eot);
-    /* For IE6-8 */
-    src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"), url(https://example.com/MaterialIcons-Regular.woff) format("woff"), url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
-  }
-}
-
+*/
 .arrival-departure:nth-last-child(-n+2) {
   flex-basis: 100%;
 }
@@ -94,7 +342,7 @@ body {
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
+  color: #1F2041;
   text-transform: uppercase;
   padding: 8px 10px;
 }
