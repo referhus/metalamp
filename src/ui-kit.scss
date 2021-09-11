@@ -24,23 +24,6 @@ body {
  flex-basis: 100%;
 }
 
-
-.input-date {
-  border: 1px solid #1F204140;
-  padding: 8px;
-  box-sizing: border-box;
-  max-width: 150px;
-  display: flex;
-  justify-content: space-between;
-  cursor: pointer;
-}
-
-.dropdown {
-   @include body;
-  border: none;
-  max-width: 70%;
-  cursor: pointer;
-}
 */
 
 .arrival-departure:nth-last-child(-n+2){
@@ -66,9 +49,6 @@ body {
   text-transform: none;
 }
 
-.arrow-down {
-  color: #1F204180;
-}
 
 .btn {
   @include h3;
@@ -95,7 +75,6 @@ margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 24px;
 }
 
 .number {

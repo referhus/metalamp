@@ -52,7 +52,7 @@ html
   .form-input
    button.dropdown 
     span Сколько гостей 
-    span.material-icons.arrow-down expand_more
+    span.material-icons.arrow expand_more
 
  .input-general
   .input-text
@@ -68,7 +68,7 @@ html
   .form-input
     button.dropdown
      span ДД.ММ.ГГГГ
-     span.material-icons.arrow-down expand_more
+     span.material-icons.arrow expand_more
 
  .input-date
   .input-text 
@@ -76,7 +76,7 @@ html
   .form-input
     button.dropdown
      span 19.08.2019
-     span.material-icons.arrow-down expand_more
+     span.material-icons.arrow expand_more
 
 
  .input-medium
@@ -85,7 +85,7 @@ html
   .form-input
     button.dropdown
      span 19 авг - 23 авг
-     span.material-icons.arrow-down expand_more
+     span.material-icons.arrow expand_more
 
  .input-medium
   .input-text 
@@ -93,7 +93,7 @@ html
   .form-input.subscription-form
    input(type="text", 
    placeholder="Email").default-input.subscription
-   span.material-icons.arrow-forward arrow_forward
+   span.material-icons.arrow arrow_forward
 
  .input-medium
   .input-text 
@@ -102,7 +102,7 @@ html
   .form-input
     button.dropdown
      span 2 спальни, 2 кровати...
-     span.material-icons.arrow-down expand_more
+     span.material-icons.arrow expand_more
 
  .input-medium
   .input-text 
@@ -111,7 +111,7 @@ html
   .form-input.expanded-dropdown
     button.dropdown
      span 2 спальни, 2 кровати...
-     span.material-icons.arrow-down expand_more
+     span.material-icons.arrow expand_more
   .form-input.expanded-form
    .numbers-items
     h3.text-items спальни
@@ -125,13 +125,13 @@ html
   .form-checkboxlist
     button.dropdown.checkboxlist
      h3.text expandable checkbox list
-     span.material-icons.arrow-down expand_more
+     span.material-icons.arrow expand_more
 
  .input-medium
   .form-checkboxlist
     button.dropdown.checkboxlist
      h3.text expandable checkbox list
-     span.material-icons.arrow-down expand_less
+     span.material-icons.arrow expand_less
   .input-checkbox
    input(type="checkbox", 
    class="checkbox-services",
@@ -169,4 +169,48 @@ html
    id="shampoo")
    label(for="shampoo") Шампунь
 
+.icon-text-list 
+ .icon-list
+  span.material-icons.icon insert_emoticon
+  .icon-text 
+   h3.icon-text-title Комфорт 
+   h3.icon-text-info Шумопоглощающие стены 
 
+ .icon-list
+  span.material-icons.icon location_city
+  .icon-text 
+   h3.icon-text-title Удобство 
+   h3.icon-text-info Окно в каждой из спален
+
+
+ .input-general
+  .input-text
+   h3.text checkbox buttons
+  .checkbox-buttons
+   input(type="checkbox", 
+   name="services",
+   id="smoke")
+   label(for="smoke") Можно курить
+  .checkbox-buttons
+   input(type="checkbox",
+   name="services",
+   id="pets")
+   label(for="pets") Можно с питомцами
+  .checkbox-buttons
+   input(type="checkbox", 
+   name="services",
+   id="ghosts")
+   label(for="ghosts") Можно пригласить гостей (до 10 человек)
+
+//-
+  .radio-buttons
+   input(type="radio", 
+   name="services",
+   id="man")
+   label(for="man") Мужчина
+  .radio-buttons
+   input(type="radio",
+   name="services",
+   id="woman")
+   label(for="woman") Женщина
+  -//
