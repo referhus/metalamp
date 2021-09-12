@@ -132,52 +132,53 @@ html
     button.dropdown.checkboxlist
      h3.text expandable checkbox list
      span.material-icons.arrow expand_less
-  .input-checkbox
+  .checkbox-radio-buttons
    input(type="checkbox", 
    class="checkbox-services",
    name="services",
    id="breakfast")
    label(for="breakfast") Завтрак
-  .input-checkbox
+  .checkbox-radio-buttons
    input(type="checkbox", 
    class="checkbox-services",
    name="services",
    id="table")
    label(for="table") Письменный стол
-  .input-checkbox
+  .checkbox-radio-buttons
    input(type="checkbox", 
    class="checkbox-services",
    name="services",
    id="feeding-chair")
    label(for="feeding-chair") Стул для кормления
-  .input-checkbox
+  .checkbox-radio-buttons
    input(type="checkbox", 
    class="checkbox-services",
    name="services",
    id="crib")
    label(for="crib") Кроватка
-  .input-checkbox
+  .checkbox-radio-buttons
    input(type="checkbox", 
    class="checkbox-services",
    name="services",
    id="tv")
    label(for="tv") Телевизор
-  .input-checkbox
+  .checkbox-radio-buttons
    input(type="checkbox", 
    class="checkbox-services",
    name="services",
    id="shampoo")
    label(for="shampoo") Шампунь
 
-.icon-text-list 
- .icon-list
-  span.material-icons.icon insert_emoticon
+ .icon-text-list 
+  .icon-list
+   span.material-icons.icon insert_emoticon
   .icon-text 
    h3.icon-text-title Комфорт 
    h3.icon-text-info Шумопоглощающие стены 
 
- .icon-list
-  span.material-icons.icon location_city
+ .icon-text-list 
+  .icon-list
+   span.material-icons.icon location_city
   .icon-text 
    h3.icon-text-title Удобство 
    h3.icon-text-info Окно в каждой из спален
@@ -186,31 +187,54 @@ html
  .input-general
   .input-text
    h3.text checkbox buttons
-  .checkbox-buttons
+  .checkbox-radio-buttons
    input(type="checkbox", 
    name="services",
    id="smoke")
    label(for="smoke") Можно курить
-  .checkbox-buttons
+  .checkbox-radio-buttons
    input(type="checkbox",
    name="services",
    id="pets")
    label(for="pets") Можно с питомцами
-  .checkbox-buttons
+  .checkbox-radio-buttons
    input(type="checkbox", 
    name="services",
    id="ghosts")
    label(for="ghosts") Можно пригласить гостей (до 10 человек)
 
-//-
-  .radio-buttons
-   input(type="radio", 
-   name="services",
-   id="man")
-   label(for="man") Мужчина
-  .radio-buttons
-   input(type="radio",
-   name="services",
-   id="woman")
-   label(for="woman") Женщина
-  -//
+
+ .input-medium
+  .input-text
+   h3.text Radio Buttons
+  .radio
+   .checkbox-radio-buttons
+    input(type="radio", 
+    name="services",
+    id="man")
+    label(for="man") Мужчина
+   .checkbox-radio-buttons
+    input(type="radio",
+    name="services",
+    id="woman")
+    label(for="woman") Женщина
+
+ .input-medium
+  .input-text
+   h3.text Toggle
+  input(type="checkbox",
+  id="toggle",
+  class="toggle")
+  label(for="toggle") Получать спецпредложения
+    
+
+  .input-text
+   h3.text like button
+  .buttons-like
+   .button-like.default-like 
+    span.material-icons.like-border favorite_border
+    span.like-border 2
+   .button-like.checked-like
+    span.material-icons.like favorite
+    span.like 12
+ 
