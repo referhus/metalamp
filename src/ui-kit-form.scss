@@ -374,6 +374,20 @@ color: $Purple;
 color: #1F204140;
 }
 
+.buttons-rate {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-rate {
+  display: flex;
+}
+.star {
+font-size: 24px;
+color: $Purple;
+cursor: pointer;
+}
+
 .btn-apply {
 display: flex;
 justify-content: end;
@@ -389,6 +403,7 @@ background-color: transparent;
 padding: 13px 7px;
 font-weight: 700;
 }
+
 
 
 
@@ -447,4 +462,102 @@ span {
   margin: 0 0 10px 20px;
   width: 100%;
   box-sizing: border-box;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  height: 200px;
+  flex-wrap: wrap;
+}
+
+.button-default {
+  font-family: Montserrat;
+  display: flex;
+  width: 99px;
+  font-size: 12px;
+  justify-content: center;
+  padding: 14px 0 15px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 22px;
+  border: none;
+  background: linear-gradient(180deg, $Purple 0%, #8BA4F9 100%);
+}
+
+.button-hover {
+opacity: 0.5;
+}
+
+.button-default_border {
+  color: $Purple;
+  border: 2px solid $Purple;
+  background: transparent;
+}
+
+.icon-link {
+background: transparent;
+color: $Purple;
+}
+
+.icon-link_hover {
+  color: #1F204180;
+}
+
+.button-pay {
+  width: 100%;
+  box-sizing: border-box;
+ p {
+display: flex;
+margin: auto;
+}
+}
+
+.icon-pay {
+  padding: 0 15px;
+}
+
+.pagination {
+  display: flex;
+  width: 244px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.pag-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  color: #1F204180;
+  font-size: 12px;
+}
+
+.active-pag {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+border-radius: 50%;
+color: #fff;
+  font-weight: 700;
+}
+
+.pag-icon {
+background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+border-radius: 22px;
+color: #fff;
+font-size: 24px;
+font-weight: 400;
+height: 100%;
+width: 100%;
+justify-content: center;
+}
+
+.text-pag {
+  display: flex;
+  width: 100%;
+  color: #1F2041BF;
+  font-size: 14px;
 }

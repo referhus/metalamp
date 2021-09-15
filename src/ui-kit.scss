@@ -49,32 +49,9 @@ body {
   text-transform: none;
 }
 
-
-.btn {
-  @include h3;
-  display: flex;
-  flex-basis: 100%;
-  padding: 15px;
-  box-sizing: border-box;
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  border-radius: 22px;
-  text-align: center;
-  justify-content: space-between;
-  color: #fff;
-  text-decoration: none;
-  margin: 10px 0px 10px;
-  text-align: center;
-
- p {
-  display: flex;
-margin: auto;
-}
-}
-
 .material-icons {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .number {
