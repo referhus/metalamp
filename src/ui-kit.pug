@@ -29,109 +29,166 @@ html
 -//
 
 .container
+ .colors-types
+  .colors
+   .block-color
+    .color-rectangle.darkshade-100
+    .color-text 
+     p Dark Shade 100%
+     span #1F2041
+   .block-color
+    .color-rectangle.darkshade-75
+    .color-text 
+     p Dark Shade 75%
+     span #1F2041
+   .block-color
+    .color-rectangle.darkshade-50
+    .color-text 
+     p Dark Shade 50%
+     span #1F2041
+   .block-color
+    .color-rectangle.darkshade-25
+    .color-text 
+     p Dark Shade 25%
+     span #1F2041
+   .block-color
+    .color-rectangle.darkshade-5
+    .color-text 
+     p Dark Shade 5%
+     span #1F2041
+   .block-color
+    .color-rectangle.purple
+    .color-text 
+     p Purple
+     span #BC9CFF
+   .block-color
+    .color-rectangle.green
+    .color-text 
+     p Green
+     span #6FCF97
 
+  .types 
+   .block-type
+    .type-title H1
+    .type-text
+     This one is the sub-section or widget title
+   .block-type
+    .type-title H2
+    .type-text
+     Next one is the item title inside widgets
+   .block-type
+    .type-title H3
+    .type-text
+     This is a label or CTA text
+   .block-type
+    .type-title body
+    .type-text
+     This is the body text which is used for most of the design, like paragraphs, lists, etc.
+
+
+//-
+.container
  .form-elements
-  .input-general
-   .input-text
-    h3.text text field
-    h3.text default
+  .b-max
+   .b-input-text
+    p.input-text text field
+    p.input-text.input-text_light default
    .form-input
     input(type="email", 
     placeholder="Email").default-input
 
-  .input-general
-   .input-text
-    h3.text text field
-    h3.text hover / focus
+  .b-max
+   .b-input-text
+    p.input-text text field
+    p.input-text.input-text_light hover / focus
    .form-input
     input(type="text", 
     placeholder="This is pretty awesome").hover-input
 
-  .input-general
-   .input-text
-    h3.text dropdown
+  .b-max
+   .b-input-text
+    p.input-text dropdown
    .form-input
     button.dropdown 
      span Сколько гостей 
      span.material-icons.arrow expand_more
 
-  .input-general
-   .input-text
-    h3.text masked text field
+  .b-max
+   .b-input-text
+    p.input-text masked text field
    .form-input
     input(type="text", 
     placeholder="ДД.ММ.ГГГГ").default-input
 
+  .b-date-dropdown
+   .b-min
+    .b-input-text 
+     p.input-text date dropdown
+    .form-input
+      button.dropdown
+       span ДД.ММ.ГГГГ
+       span.material-icons.arrow expand_more
 
-  .input-date
-   .input-text 
-    h3.text date dropdown
-   .form-input
-     button.dropdown
-      span ДД.ММ.ГГГГ
-      span.material-icons.arrow expand_more
+   .b-min
+    .b-input-text 
+     p.input-text date dropdown
+    .form-input
+      button.dropdown
+       span 19.08.2019
+       span.material-icons.arrow expand_more
 
-  .input-date
-   .input-text 
-    h3.text date dropdown
-   .form-input
-     button.dropdown
-      span 19.08.2019
-      span.material-icons.arrow expand_more
-
-
-  .input-medium
-   .input-text 
-    h3.text filter date dropdown
+  .b-medium
+   .b-input-text 
+    p.input-text filter date dropdown
    .form-input
      button.dropdown
       span 19 авг - 23 авг
       span.material-icons.arrow expand_more
 
-  .input-medium
-   .input-text 
-    h3.text subscription text field
+  .b-medium
+   .b-input-text 
+    p.input-text subscription text field
    .form-input.subscription-form
     input(type="text", 
     placeholder="Email").default-input.subscription
     span.material-icons.arrow arrow_forward
 
-  .input-medium
-   .input-text 
-    h3.text dropdown
-    h3.text default
+  .b-medium
+   .b-input-text 
+    p.input-text dropdown
+    p.input-text.input-text_light default
    .form-input
      button.dropdown
       span 2 спальни, 2 кровати...
       span.material-icons.arrow expand_more
 
-  .input-medium
-   .input-text 
-    h3.text dropdown
-    h3.text expanded
+  .b-medium
+   .b-input-text 
+    p.input-text dropdown
+    p.input-text.input-text_light expanded
    .form-input.expanded-dropdown
      button.dropdown
       span 2 спальни, 2 кровати...
       span.material-icons.arrow expand_more
    .form-input.expanded-form
     .numbers-items
-     h3.text-items спальни
+     p.text-items спальни
       span 2
-     h3.text-items кровати
+     p.text-items кровати
       span 2
-     h3.text-items ванные комнаты
+     p.text-items ванные комнаты
       span 0
 
-  .input-medium
+  .b-medium
    .form-checkboxlist
      button.dropdown.checkboxlist
-      h3.text expandable checkbox list
+      p.input-text expandable checkbox list
       span.material-icons.arrow expand_more
 
-  .input-medium
+  .b-medium
    .form-checkboxlist
      button.dropdown.checkboxlist
-      h3.text expandable checkbox list
+      p.input-text expandable checkbox list
       span.material-icons.arrow expand_less
    .checkbox-radio-buttons.default-buttons
     input(type="checkbox", 
@@ -174,20 +231,20 @@ html
    .icon-list
     span.material-icons.icon insert_emoticon
    .icon-text 
-    h3.icon-text-title Комфорт 
-    h3.icon-text-info Шумопоглощающие стены 
+    p.icon-text-title Комфорт 
+    p.icon-text-info Шумопоглощающие стены 
 
   .icon-text-list 
    .icon-list
     span.material-icons.icon location_city
    .icon-text 
-    h3.icon-text-title Удобство 
-    h3.icon-text-info Окно в каждой из спален
+    p.icon-text-title Удобство 
+    p.icon-text-info Окно в каждой из спален
 
 
-  .input-general
-   .input-text
-    h3.text checkbox buttons
+  .b-max
+   .b-input-text
+    p.input-text checkbox buttons
    .checkbox-radio-buttons
     input(type="checkbox", 
     name="services",
@@ -204,10 +261,9 @@ html
     id="ghosts")
     label(for="ghosts") Можно пригласить гостей (до 10 человек)
 
-
-  .input-medium
-   .input-text
-    h3.text Radio Buttons
+  .b-medium
+   .b-input-text
+    p.input-text Radio Buttons
    .radio
     .checkbox-radio-buttons.default-buttons
      input(type="radio", 
@@ -220,18 +276,17 @@ html
      id="woman")
      label(for="woman") Женщина
 
-  .input-medium
-   .input-text
-    h3.text Toggle
+  .b-medium
+   .b-input-text
+    p.input-text Toggle
    input(type="checkbox",
    id="toggle",
    class="toggle")
    label(for="toggle") Получать спецпредложения
-     
 
-  .input-medium
-   .input-text
-    h3.text rate button
+  .b-medium
+   .b-input-text
+    p.input-text rate button
    .buttons-rate
     .button-rate.default-rate 
      span.material-icons.star star
@@ -247,8 +302,8 @@ html
      span.material-icons.star star
      span.material-icons.star star
 
-   .input-text
-    h3.text like button
+   .b-input-text
+    p.input-text like button
    .buttons-like
     .button-like.default-like 
      span.material-icons.like-border favorite_border
@@ -257,28 +312,28 @@ html
      span.material-icons.like favorite
      span.like 12
 
-  .input-general
-   .input-text 
-    h3.text dropdown
+  .b-max
+   .b-input-text 
+    p.input-text dropdown
    .form-input.expanded-dropdown
      button.dropdown
       span Сколько гостей
       span.material-icons.arrow expand_more
    .form-input.expanded-form
     .numbers-items
-     h3.text-items взрослые
+     p.text-items взрослые
       span 0
-     h3.text-items дети
+     p.text-items дети
       span 0
-     h3.text-items младенцы
+     p.text-items младенцы
       span 0
      .btn-apply
       button.apply Применить
 
 
-  .input-general
-   .input-text 
-    h3.text rich Checkbox Buttons
+  .b-max
+   .b-input-text 
+    p.input-text rich Checkbox Buttons
    .checkbox-radio-buttons.rich-buttons
     input(type="checkbox", 
     name="services",
@@ -306,15 +361,15 @@ html
     .comment-content Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.
 
 
-  .input-medium
-   .input-text 
-    h3.text Range Slider
-    h3.text 5 000₽ - 10 000₽
+  .b-medium
+   .b-input-text 
+    p.input-text Range Slider
+    p.input-text.input-text_light 5 000₽ - 10 000₽
 
 
-  .input-medium
-   .input-text 
-    h3.text buttons
+  .b-medium
+   .b-input-text 
+    p.input-text buttons
    .buttons
     button.button-default click me
     button.button-default.button-hover click me
@@ -323,14 +378,14 @@ html
     button.button-default.icon-link click me
     button.button-default.icon-link.icon-link_hover click me
 
-  .input-general
+  .b-max
    button.button-default.button-pay 
     p перейти к оплате
     span.material-icons.icon-pay arrow_forward
 
-  .input-medium
-   .input-text
-    h3.text pagination 
+  .b-medium
+   .b-input-text
+    p.input-text pagination 
    .pagination
     a(href="#").pag-item.active-pag 1
     a(href="#").pag-item 2
@@ -340,3 +395,38 @@ html
     a(href="#").pag-item 
      span.material-icons.pag-icon arrow_forward
     p.text-pag 1 – 12 из 100+ вариантов аренды
+
+  .b-max
+   .b-input-text 
+    p.input-text dropdown
+   .form-input.expanded-dropdown
+     button.dropdown
+      span Сколько гостей
+      span.material-icons.arrow expand_more
+   .form-input.expanded-form
+    .numbers-items
+     p.text-items взрослые
+      span 2
+     p.text-items дети
+      span 1
+     p.text-items младенцы
+      span 0
+     .btns-clear-apply
+      .btn-clear 
+       button.apply очистить
+      .btn-apply
+       button.apply Применить
+
+
+  .b-bullet-list
+   .b-input-text
+    p.input-text bullet list
+   ul.bullet-list 
+    li.bullet-item 
+     span Нельзя с питомцами
+    li.bullet-item 
+     span Без вечеринок и мероприятий
+    li.bullet-item 
+     span Время прибытия — после 13:00, а выезд до 12:00
+
+     -//

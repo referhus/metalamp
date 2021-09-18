@@ -1,4 +1,71 @@
+//COLORS&TYPES
+.colors-types {
+  max-height: 900px;
+  display: flex;
+  margin: 140px;
+  justify-content: space-between;
+  align-content: space-around;
+}
+.colors {
+  flex-flow: column wrap;
+}
 
+.block-color {
+  display: flex;
+  max-width: 281px;
+  margin-bottom: 20px;
+}
+
+.color-rectangle {
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+  margin-right: 40px;
+}
+
+.color-text {
+font-size: 19px;  
+  p {
+    margin: 5px 0;
+    font-weight: 700;
+  }
+}
+
+.darkshade-100 {
+  background: $DarkShade100;
+}
+.darkshade-75 {
+  background: $DarkShade75;
+
+}
+
+.darkshade-50 {
+  background: $DarkShade50;
+
+}
+
+.darkshade-25 {
+  background: $DarkShade25;
+}
+
+.darkshade-5 {
+  background: $DarkShade5;
+}
+
+.purple {
+  background: $Purple;
+}
+
+.green {
+  background: $Green;
+}
+
+.block-type {
+  display: flex;
+  justify-content: space-between;
+}
+
+//FORM ELEMENTS
 .form-elements {
 max-width: 1200px;
 max-height: 1853px;
@@ -6,9 +73,10 @@ display: flex;
 margin: 140px;
 flex-flow: column wrap;
 justify-content: space-between;
+align-content: space-around;
 }
 
-.input-general {
+.b-max {
 max-width: 320px;
 margin: 10px;
 flex-basis: 33%;
@@ -18,7 +86,7 @@ flex-basis: 33%;
 @include body;
 max-width: 100%;
 cursor: pointer;
-border: 1px solid #1F204140;
+border: 1px solid $DarkShade25;
 border-radius: 4px;
 box-sizing: border-box;
 
@@ -34,17 +102,17 @@ input::placeholder {
 }
 }
 
-.input-text {
+.b-input-text {
 display: flex;
 justify-content: space-between;
 }
 
-.text {
+.input-text {
 @include h3;
-text-transform: uppercase;
+margin-bottom: 5px;
 }
 
-.text:nth-child(2) {
+.input-text_light {
 opacity: 0.5;
 font-weight: normal;
 }
@@ -70,17 +138,20 @@ cursor: pointer;
 color: #1F2041BF;
 }
 
-.input-date {
+.b-date-dropdown {
+display: flex;
+justify-content: space-around;
+}
+
+.b-min {
 max-width: 150px;
 flex-basis: 33%;
-
 }
 
 
-.input-medium {
+.b-medium {
 width: 266px;
 flex-basis: 33%;
-
 }
 
 .subscription {
@@ -125,7 +196,7 @@ padding: 0px;
 
 span:before {
 content: "-";
-color: #1F204140;
+color: $DarkShade25;
 display: inline-block;
 font-size: 18px;
 text-align: center;
@@ -134,13 +205,13 @@ width: 30px;
 height: 30px;
 box-sizing: border-box;
 border-radius: 50%;
-border: 1px solid #1F204140;
+border: 1px solid $DarkShade25;
 margin-right: 15px;
 }
 
 span:after {
 content: "+";
-color: #1F204140;
+color: $DarkShade25;
 display: inline-block;
 font-size: 18px;
 text-align: center;
@@ -149,7 +220,7 @@ width: 30px;
 height: 30px;
 box-sizing: border-box;
 border-radius: 50%;
-border: 1px solid #1F204140;
+border: 1px solid $DarkShade25;
 margin-left: 10px;
 }
 }
@@ -326,7 +397,7 @@ left: 4px;
 top: 3px;
 width: 12px;
 height: 12px;
-background: #1F204140;
+background: $DarkShade25;
 border-radius: 50%;
 transform: translateX(0);
 }
@@ -355,7 +426,7 @@ cursor: pointer;
 }
 
 .default-like {
-border: 1px solid #1F204140;
+border: 1px solid $DarkShade25;
 }
 
 .checked-like {
@@ -371,7 +442,7 @@ color: $Purple;
 }
 
 .like-border {
-color: #1F204140;
+color: $DarkShade25;
 }
 
 .buttons-rate {
@@ -382,6 +453,7 @@ color: #1F204140;
 .button-rate {
   display: flex;
 }
+
 .star {
 font-size: 24px;
 color: $Purple;
@@ -400,11 +472,9 @@ color: $Purple;
 line-height: 14,63px;
 border: none;
 background-color: transparent;
-padding: 13px 7px;
+padding: 15px;
 font-weight: 700;
 }
-
-
 
 
 .rich-buttons {
@@ -484,7 +554,9 @@ span {
   text-transform: uppercase;
   border-radius: 22px;
   border: none;
-  background: linear-gradient(180deg, $Purple 0%, #8BA4F9 100%);
+ cursor: pointer;
+ background: linear-gradient(180deg, $Purple 0%, #8BA4F9 100%);
+
 }
 
 .button-hover {
@@ -509,6 +581,7 @@ color: $Purple;
 .button-pay {
   width: 100%;
   box-sizing: border-box;
+  cursor: pointer;
  p {
 display: flex;
 margin: auto;
@@ -535,6 +608,7 @@ margin: auto;
   height: 40px;
   color: #1F204180;
   font-size: 12px;
+  cursor: pointer;
 }
 
 .active-pag {
@@ -560,4 +634,29 @@ justify-content: center;
   width: 100%;
   color: #1F2041BF;
   font-size: 14px;
+}
+
+.btns-clear-apply {
+  display: flex;
+  justify-content: space-between;
+}
+
+.b-bullet-list {
+  max-width: 277px;
+}
+
+.bullet-list {
+  margin: 0;
+padding: 10px;
+}
+
+.bullet-item {
+color: #1F2041BF;
+font-weight: 400;
+}
+
+.bullet-item::marker {
+ color: $DarkShade25;
+ font-size: 24px;
+ line-height: 10px;
 }

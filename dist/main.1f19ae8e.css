@@ -1,3 +1,69 @@
+.colors-types {
+  max-height: 900px;
+  display: flex;
+  margin: 140px;
+  justify-content: space-between;
+  align-content: space-around;
+}
+
+.colors {
+  flex-flow: column wrap;
+}
+
+.block-color {
+  display: flex;
+  max-width: 281px;
+  margin-bottom: 20px;
+}
+
+.color-rectangle {
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+  margin-right: 40px;
+}
+
+.color-text {
+  font-size: 19px;
+}
+.color-text p {
+  margin: 5px 0;
+  font-weight: 700;
+}
+
+.darkshade-100 {
+  background: #1F2041;
+}
+
+.darkshade-75 {
+  background: #1F2041BF;
+}
+
+.darkshade-50 {
+  background: #1F204180;
+}
+
+.darkshade-25 {
+  background: #1F204140;
+}
+
+.darkshade-5 {
+  background: #1F20410D;
+}
+
+.purple {
+  background: #BC9CFF;
+}
+
+.green {
+  background: #6FCF97;
+}
+
+.block-type {
+  display: flex;
+  justify-content: space-between;
+}
+
 .form-elements {
   max-width: 1200px;
   max-height: 1853px;
@@ -5,9 +71,10 @@
   margin: 140px;
   flex-flow: column wrap;
   justify-content: space-between;
+  align-content: space-around;
 }
 
-.input-general {
+.b-max {
   max-width: 320px;
   margin: 10px;
   flex-basis: 33%;
@@ -59,21 +126,21 @@
   }
 }
 
-.input-text {
+.b-input-text {
   display: flex;
   justify-content: space-between;
 }
 
-.text {
+.input-text {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
   color: #1F2041;
-  text-transform: uppercase;
+  margin-bottom: 5px;
 }
 
-.text:nth-child(2) {
+.input-text_light {
   opacity: 0.5;
   font-weight: normal;
 }
@@ -113,12 +180,17 @@
   }
 }
 
-.input-date {
+.b-date-dropdown {
+  display: flex;
+  justify-content: space-around;
+}
+
+.b-min {
   max-width: 150px;
   flex-basis: 33%;
 }
 
-.input-medium {
+.b-medium {
   width: 266px;
   flex-basis: 33%;
 }
@@ -438,7 +510,7 @@
   line-height: 14, 63px;
   border: none;
   background-color: transparent;
-  padding: 13px 7px;
+  padding: 15px;
   font-weight: 700;
 }
 
@@ -516,6 +588,7 @@
   text-transform: uppercase;
   border-radius: 22px;
   border: none;
+  cursor: pointer;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 }
 
@@ -541,6 +614,7 @@
 .button-pay {
   width: 100%;
   box-sizing: border-box;
+  cursor: pointer;
 }
 .button-pay p {
   display: flex;
@@ -567,6 +641,7 @@
   height: 40px;
   color: #1F204180;
   font-size: 12px;
+  cursor: pointer;
 }
 
 .active-pag {
@@ -592,6 +667,31 @@
   width: 100%;
   color: #1F2041BF;
   font-size: 14px;
+}
+
+.btns-clear-apply {
+  display: flex;
+  justify-content: space-between;
+}
+
+.b-bullet-list {
+  max-width: 277px;
+}
+
+.bullet-list {
+  margin: 0;
+  padding: 10px;
+}
+
+.bullet-item {
+  color: #1F2041BF;
+  font-weight: 400;
+}
+
+.bullet-item::marker {
+  color: #1F204140;
+  font-size: 24px;
+  line-height: 10px;
 }
 
 body {
@@ -630,8 +730,8 @@ body {
  flex-basis: 100%;
 }
 
-*/
-.arrival-departure:nth-last-child(-n+2) {
+
+.arrival-departure:nth-last-child(-n+2){
   flex-basis: 100%;
 }
 
@@ -645,28 +745,15 @@ body {
 }
 
 .dropdown input::placeholder {
-  font-family: Montserrat, sans-serif;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: #1F2041;
-  text-transform: uppercase;
-  padding: 8px 10px;
-}
-@font-face {
-  .dropdown input::placeholder {
-    font-family: "Material Icons";
-    font-style: normal;
-    font-weight: 400;
-    src: url(https://example.com/MaterialIcons-Regular.eot);
-    /* For IE6-8 */
-    src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"), url(https://example.com/MaterialIcons-Regular.woff) format("woff"), url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
-  }
+    @include body;
+    text-transform: uppercase;
+    padding: 8px 10px;
 }
 
 .ghost input::placeholder {
   text-transform: none;
 }
+
 
 .material-icons {
   display: flex;
@@ -675,22 +762,24 @@ body {
 
 .number {
   max-width: 300px;
-}
-.number span {
-  font-size: 12px;
-  color: #BC9CFF;
-  text-transform: uppercase;
+
+  span {
+    font-size: 12px;
+    color: #BC9CFF;
+;
+    text-transform: uppercase;
+  }
 }
 
 .title-date small {
-  font-size: 12px;
+font-size: 12px;
 }
 
 .title-price {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 0;
 }
 
 .price {
@@ -703,9 +792,10 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 20px;
-}
-.sum h2 {
-  font-size: 19px;
+
+  h2 {
+    font-size: 19px;
+  }
 }
 
 .info {
@@ -729,7 +819,8 @@ body {
 }
 
 .money {
-  max-width: 80px;
+max-width: 80px;
 }
+*/
 
 /*# sourceMappingURL=/main.1f19ae8e.css.map */
