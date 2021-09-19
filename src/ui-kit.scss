@@ -2,10 +2,13 @@
 @import "mixins";
 @import "ui-kit-form";
 
-body {
-  @include body;
+body, button {
+  @include body-text;
 }
-
+body {
+  margin: 0;
+  padding: 0;
+}
 /* 
 .card-date {
   display: flex;
@@ -47,13 +50,13 @@ body {
 .ghost input::placeholder {
   text-transform: none;
 }
-
+*/
 
 .material-icons {
   display: flex;
   align-items: center;
 }
-
+/*
 .number {
   max-width: 300px;
 

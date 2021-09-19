@@ -1,0 +1,164 @@
+.cards
+ .card.mb-40
+   .title-card Найдём номера под ваши пожелания
+   .b-date-dropdown
+    .b-min
+     .b-input-text 
+      p.input-text прибытие
+     .form-input
+       button.dropdown
+        span ДД.ММ.ГГГГ
+        span.material-icons.arrow expand_more
+
+    .b-min
+     .b-input-text 
+      p.input-text выезд
+     .form-input
+       button.dropdown
+        span ДД.ММ.ГГГГ
+        span.material-icons.arrow expand_more
+
+   .b-max
+    .b-input-text
+     p.input-text гости
+    .form-input
+     button.dropdown 
+      span Сколько гостей 
+      span.material-icons.arrow expand_more
+
+   .b-max.mt-30
+    button.button-default.button-pay 
+     p подобрать номер
+     span.material-icons.icon-pay arrow_forward
+
+
+ .card
+   .title-card.mb-20 Регистрация аккаунта
+   .b-max
+    .form-input.mb-10
+     input(type="text", 
+     placeholder="Имя").default-input
+    .form-input.mb-10
+     input(type="text", 
+     placeholder="Фамилия").default-input
+
+   .b-medium-radio
+    .radio
+     .checkbox-radio-buttons.default-buttons
+      input#g-man(type="radio", 
+      name="gender")
+      label(for="g-man") Мужчина
+     .checkbox-radio-buttons
+      input#g-woman(type="radio",
+      name="gender")
+      label(for="g-woman") Женщина
+
+   .b-max
+    .b-input-text
+     p.input-text дата рождения
+    .form-input.mb-10
+     input(type="text", 
+     placeholder="ДД.ММ.ГГГГ").default-input
+    .b-input-text
+     p.input-text данные для входа на сервис
+    .form-input.mb-10
+     input(type="email", 
+     placeholder="Email").default-input
+
+    .form-input.mb-10
+     input(type="password", 
+     placeholder="Пароль").default-input
+    
+   .b-medium
+    input#spec.toggle(type="checkbox")
+    label(for="spec") Получать спецпредложения
+
+   .b-max.mt-30
+    button.button-default.button-pay
+     p перейти к оплате
+     span.material-icons.icon-pay arrow_forward
+    .toxin-entry
+     a.toxin-question(href="#") Уже есть аккаунт на Toxin
+     button.button-default.button-default_border войти
+
+ .card.mb-40
+  .number 
+   .title-card
+    small № 
+    span 888 
+    span люкс
+   .price 
+    span 9 990₽ 
+    span в сутки
+
+  .b-date-dropdown
+   .b-min
+    .b-input-text 
+     p.input-text прибытие
+    .form-input
+      button.dropdown
+       span 19.08.2019
+       span.material-icons.arrow expand_more
+
+   .b-min
+    .b-input-text 
+     p.input-text выезд
+    .form-input
+      button.dropdown
+       span 23.08.2019
+       span.material-icons.arrow expand_more
+
+  .b-max
+   .b-input-text
+    p.input-text гости
+   .form-input
+    button.dropdown 
+     span 3 гостя 
+     span.material-icons.arrow expand_more
+
+  .b-max.sum
+   .price-info 9 990₽ х 4 суток
+   .price-money 39 960₽
+   .price-info Сбор за услуги: скидка 2 179₽
+    .ellipse 
+     span i
+   .price-money 0₽
+   .price-info Сбор за дополнительные услуги
+    .ellipse 
+     span i
+   .price-money 300₽
+   .result
+    .text_medium Итого:
+    .price-border
+    .text_medium 38 081₽
+
+  .b-max.mt-30
+   button.button-default.button-pay
+    p забронировать
+    span.material-icons.icon-pay arrow_forward
+
+ .card.mb-40
+   .title-card.mb-20 Войти
+   .b-max
+    .form-input.mb-10
+     input(type="email", 
+     placeholder="Email").default-input
+    .form-input.mb-20
+     input(type="password", 
+     placeholder="Пароль").default-input
+
+
+   .b-max
+    button.button-default.button-pay
+     p войти
+     span.material-icons.icon-pay arrow_forward
+    .toxin-entry
+     a.toxin-question(href="#") Нет аккаунта на Toxin?
+     button.button-default.button-default_border создать
+
+//
+ .card
+  .datepicker-here(data-inline="true")
+
+
+

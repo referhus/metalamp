@@ -1,4 +1,4 @@
-@mixin body {
+@mixin body-text {
   font-family: Montserrat, sans-serif;
   font-weight: normal;
   font-size: 14px;
@@ -18,21 +18,21 @@
 
 }
 
-@mixin h1 {
+@mixin max-text {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 29px;
   color: $DarkShade100;
 }
 
-@mixin h2 {
+@mixin medium-text {
   font-weight: bold;
   font-size: 19px;
   line-height: 23px;
   color: $DarkShade100;
 }
 
-@mixin h3 {
+@mixin min-text {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;

@@ -61,7 +61,46 @@
 
 .block-type {
   display: flex;
-  justify-content: space-between;
+  max-width: 469px;
+  margin-bottom: 50px;
+}
+
+.type-title {
+  color: #1F20410D;
+  font-weight: 400;
+  margin-right: 30px;
+  width: 37px;
+  text-align: right;
+}
+
+.type-text {
+  font-weight: 700;
+  color: #1F2041;
+}
+.type-text:first-letter {
+  text-transform: uppercase;
+}
+
+.type_max {
+  font-size: 24px;
+  max-width: 370px;
+}
+
+.type_medium {
+  font-size: 19px;
+  max-width: 312px;
+}
+
+.type_min {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.type_body {
+  font-size: 14px;
+  color: #1F2041BF;
+  font-weight: 400;
+  max-width: 302px;
 }
 
 .form-elements {
@@ -76,8 +115,7 @@
 
 .b-max {
   max-width: 320px;
-  margin: 10px;
-  flex-basis: 33%;
+  flex-basis: 100%;
 }
 
 .form-input {
@@ -103,7 +141,6 @@
   }
 }
 .form-input input {
-  border: none;
   padding: 13px 0 13px 15px;
   width: 100%;
   box-sizing: border-box;
@@ -182,17 +219,18 @@
 
 .b-date-dropdown {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-basis: 100%;
 }
 
 .b-min {
   max-width: 150px;
-  flex-basis: 33%;
+  flex-basis: 100%;
 }
 
 .b-medium {
-  width: 266px;
-  flex-basis: 33%;
+  max-width: 266px;
+  flex-basis: 100%;
 }
 
 .subscription {
@@ -206,7 +244,7 @@
 
 .arrow {
   color: #1F204180;
-  padding: 0 15px;
+  padding: 0 11px;
   font-size: 24px;
 }
 
@@ -368,7 +406,6 @@
   color: #1F2041BF;
 }
 .checkbox-radio-buttons label {
-  margin-left: 15px;
   margin-bottom: 10px;
 }
 
@@ -416,7 +453,7 @@
   margin: 0;
   margin-right: 10px;
   vertical-align: text-top;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #BC9CFF;
   border-radius: 10px;
   box-sizing: border-box;
@@ -577,12 +614,11 @@
 }
 
 .button-default {
-  font-family: Montserrat;
   display: flex;
   width: 99px;
   font-size: 12px;
   justify-content: center;
-  padding: 14px 0 15px;
+  padding: 10px 0;
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
@@ -694,7 +730,145 @@
   line-height: 10px;
 }
 
-body {
+.cards {
+  display: flex;
+  padding: 140px;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-flow: column wrap;
+  background: #e5e5e5;
+  max-height: 1350px;
+}
+
+.card {
+  max-width: 380px;
+  padding: 40px 30px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0px 0px 25px 0px #00000033;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: #fff;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.number {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  color: #1F2041;
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 100%;
+  align-items: center;
+  align-content: space-around;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.title-card {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  color: #1F2041;
+}
+.title-card small {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.title-card span:nth-last-child(1) {
+  font-size: 12px;
+  color: #BC9CFF;
+}
+
+.price {
+  font-size: 14px;
+  color: #1F204180;
+}
+.price span:nth-last-child(1) {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.sum {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  color: #1F2041BF;
+}
+
+.price-info {
+  max-width: 241px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.ellipse {
+  text-align: center;
+  font-size: 12px;
+  line-height: 18px;
+  min-width: 20px;
+  height: 20px;
+  border: 1px solid #1F204140;
+  border-radius: 50%;
+  box-sizing: border-box;
+  color: #1F204140;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.text_medium {
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 23px;
+  color: #1F2041;
+}
+
+.result {
+  display: flex;
+  height: 24px;
+  align-items: flex-end;
+}
+
+.price-border {
+  box-sizing: border-box;
+  width: 176px;
+  border-bottom: 1px dashed #1F204140;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.b-medium-radio {
+  max-width: 230px;
+  flex-basis: 100%;
+}
+
+.toxin-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.toxin-question {
+  text-decoration: none;
+  color: #000;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+body, button {
   font-family: Montserrat, sans-serif;
   font-weight: normal;
   font-size: 14px;
@@ -702,7 +876,7 @@ body {
   color: #1F2041;
 }
 @font-face {
-  body {
+  body, button {
     font-family: "Material Icons";
     font-style: normal;
     font-weight: 400;
@@ -710,6 +884,11 @@ body {
     /* For IE6-8 */
     src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"), url(https://example.com/MaterialIcons-Regular.woff) format("woff"), url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
   }
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 /* 
@@ -753,13 +932,13 @@ body {
 .ghost input::placeholder {
   text-transform: none;
 }
-
-
+*/
 .material-icons {
   display: flex;
   align-items: center;
 }
 
+/*
 .number {
   max-width: 300px;
 
