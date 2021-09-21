@@ -26,7 +26,6 @@
     "sass": "^1.39.0"
   },
   "dependencies": {
-    "air-datepicker": "^2.2.3",
     "jquery": "^3.6.0",
     "jquery.min.js": "^3.5.1",
     "nouislider": "^15.4.0"

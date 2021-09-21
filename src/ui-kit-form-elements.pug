@@ -63,6 +63,110 @@
    placeholder="Email").default-input.subscription
    span.material-icons.arrow arrow_forward
 
+ .b-max
+  .b-input-text
+   p.input-text checkbox buttons
+  .checkbox-radio-buttons
+   input(type="checkbox", 
+   name="services",
+   id="smoke")
+   label(for="smoke") Можно курить
+  .checkbox-radio-buttons.default-buttons
+   input(type="checkbox",
+   name="services",
+   id="pets")
+   label(for="pets") Можно с питомцами
+  .checkbox-radio-buttons.default-buttons
+   input(type="checkbox", 
+   name="services",
+   id="ghosts")
+   label(for="ghosts") Можно пригласить гостей (до 10 человек)
+
+ .b-medium
+  .b-input-text
+   p.input-text Radio Buttons
+  .radio
+   .checkbox-radio-buttons.default-buttons
+    input(type="radio", 
+    name="services",
+    id="man")
+    label(for="man") Мужчина
+   .checkbox-radio-buttons
+    input(type="radio",
+    name="services",
+    id="woman")
+    label(for="woman") Женщина
+
+ .b-medium
+  .b-input-text
+   p.input-text Toggle
+   input#toggle.toggle(type="checkbox")
+   label(for="toggle") Получать спецпредложения
+
+ .b-medium
+  .b-input-text
+   p.input-text like button
+  .buttons-like
+   .button-like.default-like 
+    span.material-icons.like-border favorite_border
+    span.like-border 2
+   .button-like.checked-like
+    span.material-icons.like favorite
+    span.like 12
+
+  .b-input-text
+   p.input-text rate button
+  .buttons-rate
+   .button-rate.default-rate 
+    span.material-icons.star star
+    span.material-icons.star star
+    span.material-icons.star star
+    span.material-icons.star star
+    span.material-icons.star star_border
+
+   .button-rate.checked-rate
+    span.material-icons.star star
+    span.material-icons.star star
+    span.material-icons.star star
+    span.material-icons.star star
+    span.material-icons.star star
+
+ .b-medium
+  .b-input-text.mb-20 
+   p.input-text Range Slider
+   p.input-text.input-text_light#slider-range-value 5 000₽ - 10 000₽
+  #slider
+
+ .b-medium
+  .b-input-text 
+   p.input-text buttons
+  .buttons
+   button.button-default click me
+   button.button-default.button-hover click me
+   button.button-default.button-default_border click me
+   button.button-default.button-default_border.button-hover click me
+   button.button-default.icon-link click me
+   button.button-default.icon-link.icon-link_hover click me
+
+ .b-max
+  button.button-default.button-pay 
+   p перейти к оплате
+   span.material-icons.icon-pay arrow_forward
+
+ .b-medium
+  .b-input-text
+   p.input-text pagination 
+  .pagination
+   a(href="#").pag-item.active-pag 1
+   a(href="#").pag-item 2
+   a(href="#").pag-item 3
+   a(href="#").pag-item ...
+   a(href="#").pag-item 15
+   a(href="#").pag-item 
+    span.material-icons.pag-icon arrow_forward
+   p.text-pag 1 – 12 из 100+ вариантов аренды
+
+.form-elements
  .b-medium
   .b-input-text 
    p.input-text dropdown
@@ -137,89 +241,6 @@
    id="shampoo")
    label(for="shampoo") Шампунь
 
- .icon-text-list 
-  .icon-list
-   span.material-icons.icon insert_emoticon
-  .icon-text 
-   p.icon-text-title Комфорт 
-   p.icon-text-info Шумопоглощающие стены 
-
- .icon-text-list 
-  .icon-list
-   span.material-icons.icon location_city
-  .icon-text 
-   p.icon-text-title Удобство 
-   p.icon-text-info Окно в каждой из спален
-
-
- .b-max
-  .b-input-text
-   p.input-text checkbox buttons
-  .checkbox-radio-buttons
-   input(type="checkbox", 
-   name="services",
-   id="smoke")
-   label(for="smoke") Можно курить
-  .checkbox-radio-buttons.default-buttons
-   input(type="checkbox",
-   name="services",
-   id="pets")
-   label(for="pets") Можно с питомцами
-  .checkbox-radio-buttons.default-buttons
-   input(type="checkbox", 
-   name="services",
-   id="ghosts")
-   label(for="ghosts") Можно пригласить гостей (до 10 человек)
-
- .b-medium
-  .b-input-text
-   p.input-text Radio Buttons
-  .radio
-   .checkbox-radio-buttons.default-buttons
-    input(type="radio", 
-    name="services",
-    id="man")
-    label(for="man") Мужчина
-   .checkbox-radio-buttons
-    input(type="radio",
-    name="services",
-    id="woman")
-    label(for="woman") Женщина
-
- .b-medium
-  .b-input-text
-   p.input-text Toggle
-   input#toggle.toggle(type="checkbox")
-   label(for="toggle") Получать спецпредложения
-
- .b-medium
-  .b-input-text
-   p.input-text rate button
-  .buttons-rate
-   .button-rate.default-rate 
-    span.material-icons.star star
-    span.material-icons.star star
-    span.material-icons.star star
-    span.material-icons.star star
-    span.material-icons.star star_border
-
-   .button-rate.checked-rate
-    span.material-icons.star star
-    span.material-icons.star star
-    span.material-icons.star star
-    span.material-icons.star star
-    span.material-icons.star star
-
-  .b-input-text
-   p.input-text like button
-  .buttons-like
-   .button-like.default-like 
-    span.material-icons.like-border favorite_border
-    span.like-border 2
-   .button-like.checked-like
-    span.material-icons.like favorite
-    span.like 12
-
  .b-max
   .b-input-text 
    p.input-text dropdown
@@ -238,7 +259,6 @@
     .btn-apply
      button.apply Применить
 
-
  .b-max
   .b-input-text 
    p.input-text rich Checkbox Buttons
@@ -255,54 +275,6 @@
    label(for="invalid") Помощник для инвалидов
     span На 1 этаже вас встретит специалист  и проводит до номера.
 
- .comment 
-  .person-info
-   img(src="img/image.png",
-   alt="avatar").avatar   
-   .person
-    p Мурад Сарафанов
-    span 5 дней назад
-  .comment-block
-   .button-like.checked-like
-    span.material-icons.like favorite
-    span.like 12
-   .comment-content Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.
-
-
- .b-medium
-  .b-input-text 
-   p.input-text Range Slider
-   p.input-text.input-text_light 5 000₽ - 10 000₽
-
-
- .b-medium
-  .b-input-text 
-   p.input-text buttons
-  .buttons
-   button.button-default click me
-   button.button-default.button-hover click me
-   button.button-default.button-default_border click me
-   button.button-default.button-default_border.button-hover click me
-   button.button-default.icon-link click me
-   button.button-default.icon-link.icon-link_hover click me
-
- .b-max
-  button.button-default.button-pay 
-   p перейти к оплате
-   span.material-icons.icon-pay arrow_forward
-
- .b-medium
-  .b-input-text
-   p.input-text pagination 
-  .pagination
-   a(href="#").pag-item.active-pag 1
-   a(href="#").pag-item 2
-   a(href="#").pag-item 3
-   a(href="#").pag-item ...
-   a(href="#").pag-item 15
-   a(href="#").pag-item 
-    span.material-icons.pag-icon arrow_forward
-   p.text-pag 1 – 12 из 100+ вариантов аренды
 
  .b-max
   .b-input-text 
@@ -325,7 +297,6 @@
      .btn-apply
       button.apply Применить
 
-
  .b-bullet-list
   .b-input-text
    p.input-text bullet list
@@ -336,3 +307,33 @@
     span Без вечеринок и мероприятий
    li.bullet-item 
     span Время прибытия — после 13:00, а выезд до 12:00
+
+
+.form-elements
+ .icon-text-list 
+  .icon-list
+   span.material-icons.icon insert_emoticon
+  .icon-text 
+   p.icon-text-title Комфорт 
+   p.icon-text-info Шумопоглощающие стены 
+
+ .icon-text-list 
+  .icon-list
+   span.material-icons.icon location_city
+  .icon-text 
+   p.icon-text-title Удобство 
+   p.icon-text-info Окно в каждой из спален
+
+ .comment 
+  .person-info
+   img(src="img/avatar-comment.png",
+   alt="avatar").avatar   
+   .person
+    p Мурад Сарафанов
+    span 5 дней назад
+  .comment-block
+   .button-like.checked-like
+    span.material-icons.like favorite
+    span.like 12
+   .comment-content Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.
+

@@ -108,7 +108,7 @@ font-size: 19px;
 //FORM ELEMENTS
 .form-elements {
 max-width: 1200px;
-max-height: 1853px;
+max-height: 627px;
 display: flex;
 margin: 140px;
 flex-flow: column wrap;
@@ -195,8 +195,10 @@ flex-basis: 100%;
 }
 
 .subscription {
-max-width: 70%;
+border: none;
 }
+
+
 
 .subscription-form {
 display: flex;
@@ -402,7 +404,6 @@ padding: 10px 0 17px 10px;
 .icon-text-info {
 font-weight: normal;
 }
-
 
 .radio {
 display: flex;
@@ -705,10 +706,10 @@ font-weight: 400;
 display: flex;
 padding: 140px;
 justify-content: space-between;
-align-content: space-between;
+align-content: space-around;
 flex-flow: column wrap;
 background: #e5e5e5;
-max-height: 1350px;
+max-height: 1100px;
 }
 
 .card {
@@ -721,6 +722,7 @@ max-height: 1350px;
   background: #fff;
   border-radius: 4px;
   box-sizing: border-box;
+  margin-right: 40px;
 }
 
 .number {
@@ -831,4 +833,76 @@ margin-bottom: 10px;
 
 .mb-40 {
   margin-bottom: 40px;
+}
+
+
+.card-min {
+  max-width: 270px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.padding {
+padding: 13px 17px 0 20px;
+}
+
+.number-img {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.arrow-left, 
+.arrow-right {
+  position: absolute;
+  color: #fff;
+  height: 100%;
+  top: -3%;
+  padding: 0 10px;
+}
+
+.arrow-left {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+}
+
+.arrow-right {
+  right: 0%;
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+
+}
+
+.price-min {
+  font-size: 19px;
+
+  &:nth-last-child(1) {
+    font-size: 14px;
+  }
+
+}
+
+.reviews {
+display: flex;
+justify-content: space-between;
+width: 100%;
+padding-bottom: 19px;
+}
+
+.reviews-size {
+  font-size: 14px;
+
+  & span:nth-last-child(2) {
+    font-weight: 700;
+  }
+}
+
+.linie {
+  margin: 5px auto 0;
+  height: 1px;
+  width: 230px;
+  background: #1F20411A;
+
+}
+
+.reviews-content {
+  display: flex;
 }
