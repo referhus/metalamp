@@ -1,105 +1,20 @@
 @import "colors";
 @import "mixins";
+@import "ui-kit-type-colors";
 @import "ui-kit-form";
+@import "ui-kit-cards";
+@import "ui-kit-header-footer";
 
 body, button {
   @include body-text;
 }
+
 body {
   margin: 0;
   padding: 0;
 }
-/* 
-
-
-.arrival-departure:nth-last-child(-n+2){
-  flex-basis: 100%;
-}
-
-.input-ghost {
-  border: 1px solid #1F204140;
-  padding: 10px;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-  cursor: pointer;
-}
-
-.dropdown input::placeholder {
-    @include body;
-    text-transform: uppercase;
-    padding: 8px 10px;
-}
-
-.ghost input::placeholder {
-  text-transform: none;
-}
-*/
 
 .material-icons {
   display: flex;
   align-items: center;
 }
-/*
-.number {
-  max-width: 300px;
-
-  span {
-    font-size: 12px;
-    color: #BC9CFF;
-;
-    text-transform: uppercase;
-  }
-}
-
-.title-date small {
-font-size: 12px;
-}
-
-.title-price {
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin: 0;
-}
-
-.price {
-  font-size: 14px;
-  color: #BC9CFF;
-}
-
-.sum {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-top: 20px;
-
-  h2 {
-    font-size: 19px;
-  }
-}
-
-.info {
-  max-width: 230px;
-  margin-bottom: 10px;
-}
-
-.info:nth-child(3)::after, .info:nth-child(5)::after {
-  content: "i";
-  position: absolute;
-  text-align: center;
-  font-size: 12px;
-  line-height: 18px;
-  margin: 0 auto;
-  width: 20px;
-  height: 20px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  border-radius: 50%;
-  box-sizing: border-box;
-  color: rgba(31, 32, 65, 0.25);
-}
-
-.money {
-max-width: 80px;
-}
-*/

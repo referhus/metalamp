@@ -1,0 +1,105 @@
+.colors-types {
+  max-height: 900px;
+  display: flex;
+  margin: 140px;
+  justify-content: space-between;
+  align-content: space-around;
+}
+
+.colors {
+  flex-flow: column wrap;
+}
+
+.block-color {
+  display: flex;
+  max-width: 281px;
+  margin-bottom: 20px;
+}
+
+.color-rectangle {
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+  margin-right: 40px;
+}
+
+.color-text {
+font-size: 19px;  
+  p {
+    margin: 5px 0;
+    font-weight: 700;
+  }
+}
+
+.darkshade-100 {
+  background: $DarkShade100;
+}
+.darkshade-75 {
+  background: $DarkShade75;
+
+}
+
+.darkshade-50 {
+  background: $DarkShade50;
+
+}
+
+.darkshade-25 {
+  background: $DarkShade25;
+}
+
+.darkshade-5 {
+  background: $DarkShade5;
+}
+
+.purple {
+  background: $Purple;
+}
+
+.green {
+  background: $Green;
+}
+
+.block-type {
+  display: flex;
+  max-width: 469px;
+  margin-bottom: 50px;
+}
+
+.type-title {
+  color: $DarkShade5;
+  font-weight: 400;
+  margin-right: 30px;
+  width: 37px;
+  text-align: right;
+}
+
+.type-text {
+  font-weight: 700;
+  color: $DarkShade100;
+  &:first-letter {
+    text-transform: uppercase;
+  }
+}
+
+.type_max {
+  font-size: 24px;
+  max-width: 370px;
+}
+
+.type_medium {
+  font-size: 19px;
+  max-width: 312px;
+}
+
+.type_min {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.type_body {
+  font-size: 14px;
+  color: $DarkShade75;
+  font-weight: 400;
+  max-width: 302px;
+}

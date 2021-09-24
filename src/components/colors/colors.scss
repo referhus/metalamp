@@ -1,0 +1,49 @@
+.block-color {
+  display: flex;
+  max-width: 281px;
+  margin-bottom: 20px;
+}
+
+.color-rectangle {
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+  margin-right: 40px;
+}
+
+.color-text {
+font-size: 19px;  
+  &-p {
+    margin: 5px 0;
+    font-weight: 700;
+  }
+}
+
+.darkshade-100 {
+  background: $DarkShade100;
+}
+.darkshade-75 {
+  background: $DarkShade75;
+
+}
+
+.darkshade-50 {
+  background: $DarkShade50;
+
+}
+
+.darkshade-25 {
+  background: $DarkShade25;
+}
+
+.darkshade-5 {
+  background: $DarkShade5;
+}
+
+.purple {
+  background: $Purple;
+}
+
+.green {
+  background: $Green;
+}
