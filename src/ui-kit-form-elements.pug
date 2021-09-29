@@ -1,44 +1,31 @@
 include components/input/inputDefault/inputDefault.pug
 include components/input/inputHover/inputHover.pug
 include components/input/buttonDropdown/btnDropdown.pug
+include components/input/inputMasked/inputMasked.pug
+include components/input/dateDropdown/dateDropdown.pug
 
 .form-elements
  .b-max
-  +input-default
+  +b-input('text field', 'default', 'input', 'email', 'Email', 'default-input')
 
  .b-max
-  +input-hover
+  +b-input('text field', 'hover / focus', 'input', 'text', 'This is pretty awesome', 'hover-input')
 
  .b-max
-  +btn-dropdown
-  
+  +b-input('dropdown', ' ', 'button', 'Сколько гостей', 'expand_more', ' ')  
+
  .b-max
-  +b-input-text('masked text field', ' ')
-  .form-input
-   input(type="text", 
-   placeholder="ДД.ММ.ГГГГ").default-input
+  +b-input('masked text field', ' ', 'input', 'text', 'ДД.ММ.ГГГГ', 'default-input')
 
  .b-date-dropdown
   .b-min
-   +b-input-text('date dropdown', ' ')
-   .form-input
-     button.dropdown
-      span ДД.ММ.ГГГГ
-      span.material-icons.arrow expand_more
+   +b-input('date dropdown', ' ', 'button', '19.08.2019', 'expand_more', ' ')
 
   .b-min
-   +b-input-text('date dropdown', ' ')
-   .form-input
-     button.dropdown
-      span 19.08.2019
-      span.material-icons.arrow expand_more
+   +b-input('date dropdown', ' ', 'button', '23.08.2019', 'expand_more', ' ')
 
  .b-medium
-  +b-input-text('filter date dropdown', ' ')
-  .form-input
-    button.dropdown
-     span 19 авг - 23 авг
-     span.material-icons.arrow expand_more
+  +b-input('filter date dropdown', ' ', 'button', '19 авг - 23 авг', 'expand_more', ' ')
 
  .b-medium
   +b-input-text('subscription text field', ' ')

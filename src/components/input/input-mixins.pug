@@ -1,7 +1,7 @@
-mixin b-input-text(inputText, inputTextLight)
+mixin b-input-text(inputTitle, inputSubTitle)
  .b-input-text
-  p.input-text= inputText
-  p.input-text.input-text_light= inputTextLight
+  p.input-text= inputTitle
+  p.input-text.input-text_light= inputSubTitle
 -
 
 mixin form-input(value, typeText, placeholderIcon, classInput)
@@ -14,5 +14,11 @@ mixin form-input(value, typeText, placeholderIcon, classInput)
     span= typeText 
     span.material-icons.arrow= placeholderIcon
  -
+
+mixin b-input(inputTitle, inputSubTitle, value, typeText, placeholderIcon, classInput)
+ +b-input-text(inputTitle, inputSubTitle)
+ +form-input(value, typeText, placeholderIcon, classInput)
+-
+
 
 script(src='components/input/input-mixins.js')
