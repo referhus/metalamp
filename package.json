@@ -26,8 +26,10 @@
     "sass": "^1.39.0"
   },
   "dependencies": {
+    "components": "^0.1.0",
     "jquery": "^3.6.0",
     "jquery.min.js": "^3.5.1",
-    "nouislider": "^15.4.0"
+    "nouislider": "^15.4.0",
+    "src": "^1.1.2"
   }
 }

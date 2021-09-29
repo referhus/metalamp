@@ -1,0 +1,10 @@
+mixin colors(textColor, color, classRect)
+ .block-color 
+  div(class= 'color-rectangle', class= classRect)
+  .color-text
+   p= textColor
+   span= color
+ -
+
+ 
+script(src='components/colors/block-color.js')

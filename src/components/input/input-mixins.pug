@@ -1,0 +1,18 @@
+mixin b-input-text(inputText, inputTextLight)
+ .b-input-text
+  p.input-text= inputText
+  p.input-text.input-text_light= inputTextLight
+-
+
+mixin form-input(value, typeText, placeholderIcon, classInput)
+ .form-input
+  if(value == 'input')
+   input(type= typeText, 
+   placeholder= placeholderIcon, class= classInput)
+  else if(value == 'button')
+   button.dropdown 
+    span= typeText 
+    span.material-icons.arrow= placeholderIcon
+ -
+
+script(src='components/input/input-mixins.js')

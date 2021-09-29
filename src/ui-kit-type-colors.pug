@@ -1,55 +1,18 @@
-//include components/colors/colors.pug
+include components/colors/block-color.pug
+include components/type/block-type.pug
 
 .colors-types
  .colors
-  .block-color
-   .color-rectangle.darkshade-100
-   .color-text 
-    p Dark Shade 100%
-    span #1F2041
-  .block-color
-   .color-rectangle.darkshade-75
-   .color-text 
-    p Dark Shade 75%
-    span #1F2041
-  .block-color
-   .color-rectangle.darkshade-50
-   .color-text 
-    p Dark Shade 50%
-    span #1F2041
-  .block-color
-   .color-rectangle.darkshade-25
-   .color-text 
-    p Dark Shade 25%
-    span #1F2041
-  .block-color
-   .color-rectangle.darkshade-5
-   .color-text 
-    p Dark Shade 5%
-    span #1F2041
-  .block-color    
-   .color-rectangle.purple
-   .color-text 
-    p Purple
-    span #BC9CFF
-  .block-color
-   .color-rectangle.green
-   .color-text 
-    p Green
-    span #6FCF97
+  +colors('Dark Shade 100%', '#1F2041', 'darkshade-100')
+  +colors('Dark Shade 75%', '#1F2041', 'darkshade-75')
+  +colors('Dark Shade 50%', '#1F2041', 'darkshade-50')
+  +colors('Dark Shade 25%', '#1F2041', 'darkshade-25')
+  +colors('Dark Shade 5%', '#1F2041', 'darkshade-5')
+  +colors('Purple', '#BC9CFF', 'purple')
+  +colors('Green', '#6FCF97', 'green')
 
  .types 
-  .block-type
-   .type-title.type_max H1
-   .type-text.type_max This one is the sub-section or widget title
-  .block-type
-   .type-title.type_medium H2
-   .type-text.type_medium Next one is the item title inside widgets
-  .block-type
-   .type-title.type_min H3
-   .type-text.type_min This is a label or CTA text
-  .block-type
-   .type-title body
-   .type-text.type_body This is the body text which is used for most of the design, like paragraphs, lists, etc.
-
-//
+  +type('type_max', 'H1', 'type_max', 'This one is the sub-section or widget title')
+  +type('type_medium', 'H2', 'type_medium', 'Next one is the item title inside widgets')
+  +type('type_min', 'H3', 'type_min', 'This is a label or CTA text')
+  +type('', 'body', 'type_body', 'This is the body text which is used for most of the design, like paragraphs, lists, etc.')

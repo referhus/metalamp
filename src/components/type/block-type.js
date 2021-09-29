@@ -1,0 +1,1 @@
+import '/components/type/block-type.scss';

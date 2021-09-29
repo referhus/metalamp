@@ -1,71 +1,54 @@
+include components/input/inputDefault/inputDefault.pug
+include components/input/inputHover/inputHover.pug
+include components/input/buttonDropdown/btnDropdown.pug
+
 .form-elements
  .b-max
-  .b-input-text
-   p.input-text text field
-   p.input-text.input-text_light default
-  .form-input
-   input(type="email", 
-   placeholder="Email").default-input
+  +input-default
 
  .b-max
-  .b-input-text
-   p.input-text text field
-   p.input-text.input-text_light hover / focus
-  .form-input
-   input(type="text", 
-   placeholder="This is pretty awesome").hover-input
+  +input-hover
 
  .b-max
-  .b-input-text
-   p.input-text dropdown
-  .form-input
-   button.dropdown 
-    span Сколько гостей 
-    span.material-icons.arrow expand_more
-
+  +btn-dropdown
+  
  .b-max
-  .b-input-text
-   p.input-text masked text field
+  +b-input-text('masked text field', ' ')
   .form-input
    input(type="text", 
    placeholder="ДД.ММ.ГГГГ").default-input
 
  .b-date-dropdown
   .b-min
-   .b-input-text 
-    p.input-text date dropdown
+   +b-input-text('date dropdown', ' ')
    .form-input
      button.dropdown
       span ДД.ММ.ГГГГ
       span.material-icons.arrow expand_more
 
   .b-min
-   .b-input-text 
-    p.input-text date dropdown
+   +b-input-text('date dropdown', ' ')
    .form-input
      button.dropdown
       span 19.08.2019
       span.material-icons.arrow expand_more
 
  .b-medium
-  .b-input-text 
-   p.input-text filter date dropdown
+  +b-input-text('filter date dropdown', ' ')
   .form-input
     button.dropdown
      span 19 авг - 23 авг
      span.material-icons.arrow expand_more
 
  .b-medium
-  .b-input-text 
-   p.input-text subscription text field
+  +b-input-text('subscription text field', ' ')
   .form-input.subscription-form
    input(type="text", 
    placeholder="Email").default-input.subscription
    span.material-icons.arrow arrow_forward
 
  .b-max
-  .b-input-text
-   p.input-text checkbox buttons
+  +b-input-text('checkbox buttons', ' ')
   .checkbox-radio-buttons
    input(type="checkbox", 
    name="services",
@@ -83,8 +66,7 @@
    label(for="ghosts") Можно пригласить гостей (до 10 человек)
 
  .b-medium
-  .b-input-text
-   p.input-text Radio Buttons
+  +b-input-text('Radio Buttons', ' ')
   .radio
    .checkbox-radio-buttons.default-buttons
     input(type="radio", 
@@ -98,14 +80,12 @@
     label(for="woman") Женщина
 
  .b-medium
-  .b-input-text
-   p.input-text Toggle
+  +b-input-text('toggle', ' ')
    input#toggle.toggle(type="checkbox")
    label(for="toggle") Получать спецпредложения
 
  .b-medium
-  .b-input-text
-   p.input-text like button
+  +b-input-text('like buttons', ' ')
   .buttons-like
    .button-like.default-like 
     span.material-icons.like-border favorite_border
@@ -114,8 +94,7 @@
     span.material-icons.like favorite
     span.like 12
 
-  .b-input-text
-   p.input-text rate button
+  +b-input-text('rate buttons', ' ')
   .buttons-rate
    .button-rate.default-rate 
     span.material-icons.star star
@@ -138,8 +117,7 @@
   #slider
 
  .b-medium
-  .b-input-text 
-   p.input-text buttons
+  +b-input-text('buttons', ' ')
   .buttons
    button.button-default click me
    button.button-default.button-hover click me
@@ -154,8 +132,7 @@
    span.material-icons.icon-pay arrow_forward
 
  .b-medium
-  .b-input-text
-   p.input-text pagination 
+  +b-input-text('pagination', ' ')
   .pagination
    a(href="#").pag-item.active-pag 1
    a(href="#").pag-item 2
@@ -168,18 +145,14 @@
 
 .form-elements
  .b-medium
-  .b-input-text 
-   p.input-text dropdown
-   p.input-text.input-text_light default
+  +b-input-text('dropdown', 'default')
   .form-input
     button.dropdown
      span 2 спальни, 2 кровати...
      span.material-icons.arrow expand_more
 
  .b-medium
-  .b-input-text 
-   p.input-text dropdown
-   p.input-text.input-text_light expanded
+  +b-input-text('dropdown', 'expanded')
   .form-input.expanded-dropdown
     button.dropdown
      span 2 спальни, 2 кровати...
@@ -242,8 +215,7 @@
    label(for="shampoo") Шампунь
 
  .b-max
-  .b-input-text 
-   p.input-text dropdown
+  +b-input-text('dropdown', ' ')
   .form-input.expanded-dropdown
     button.dropdown
      span Сколько гостей
@@ -260,8 +232,7 @@
      button.apply Применить
 
  .b-max
-  .b-input-text 
-   p.input-text rich Checkbox Buttons
+  +b-input-text('rich Checkbox Buttons', ' ')
   .checkbox-radio-buttons.rich-buttons
    input(type="checkbox", 
    name="services",
@@ -277,8 +248,7 @@
 
 
  .b-max
-  .b-input-text 
-   p.input-text dropdown
+  +b-input-text('dropdown', ' ')
   .form-input.expanded-dropdown
     button.dropdown
      span Сколько гостей
@@ -298,8 +268,7 @@
       button.apply Применить
 
  .b-bullet-list
-  .b-input-text
-   p.input-text bullet list
+  +b-input-text('bullet list', ' ')
   ul.bullet-list 
    li.bullet-item 
     span Нельзя с питомцами
